@@ -1,0 +1,23 @@
+<h2>Artistas Existentes</h2>
+<div class="col-xs-12">
+	Filtro:
+	<br/>
+	<input type="text" data-ng-model="filtroArtista" class="form-control" placeHolder="Texto a Filtrar..." />
+	<br/>
+</div>
+<div class="col-xs-12">
+	<ul>
+		<li data-ng-repeat="artista in artistas">
+			<table class="table table-striped">
+				<tr>
+					<th>Node ID</th>
+					<th>Nombre</th>
+				</tr>
+				<tr data-ng-repeat="artista2 in artista | filter:filtroArtista">
+					<td>{{ artista2.node_id }}</td>
+					<td>{{ artista2.name }}</td>
+				</tr>
+			</table>
+		</li>
+	</ul>
+</div>

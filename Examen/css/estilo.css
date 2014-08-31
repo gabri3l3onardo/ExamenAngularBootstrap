@@ -1,0 +1,22 @@
+h2{
+	background-color: #a0a2d6;
+}
+
+html{
+	background-color: #ddddf0;
+}
+
+nav>div{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #8c8ecc;
+}
+
+nav>div>a{
+	color: black;
+}
+
+ul{
+	margin: 0;
+	list-style-type: none;
+}

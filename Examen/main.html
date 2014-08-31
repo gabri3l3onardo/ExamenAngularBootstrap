@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="appExamen">
+  <head>
+    <meta charset="utf-8">
+    <title>Examen - Artistas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/estilo.css" rel="stylesheet">
+	<script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/aplicacion.js"></script>
+  </head>
+  <body>
+	<div class="content">
+		<form>
+			<nav>
+				<div class="col-xs-12 col-sm-3"><a href="#/consulta" >Consultar Artistas</a></div>
+				<div class="col-xs-12 col-sm-9"><a href="#/nuevo" >Agregar Artista</a></div>
+			</nav>
+			<div data-ng-view="" class="col-xs-12"></div>
+		</form>
+	</div>
+  </body>
+</html>
